@@ -3,10 +3,12 @@ let fields = [];
 let currentShape = 'cross';
 
 function fillShape(id){
-    if(currentShape == 'cross'){
+    if (currentShape == 'cross') {
         currentShape = 'circle';
-    } else{
+    } else {
         currentShape = 'cross';
     }
-    fields[id] = 'cross';
+
+    fields[id] = currentShape;
+    console.log(fields);
 }
