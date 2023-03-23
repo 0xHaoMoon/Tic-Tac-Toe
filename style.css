@@ -7,7 +7,11 @@ td{
     width: 133px;
     height: 133px;
     border: solid black 5px;
-    
+    cursor: pointer;
+}
+
+td:hover{
+  background: rgba(25, 221, 0 , 0.1);
 }
 
 table {
