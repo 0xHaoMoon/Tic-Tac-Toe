@@ -88,6 +88,26 @@ function checkForWin(){
         document.getElementById('restart-btn').classList.remove('d-none');
         }, 1000);
     }
+
+    if (fields.length == 9 && !fields.includes(undefined) && !winner) {
+        setTimeout(function () {
+            document.getElementById('game-over').classList.remove('d-none');
+            document.getElementById('restart-btn').classList.remove('d-none');
+        }, 1500);
+    }
+}
+
+function draw() {
+    for (let i = 0; i < fields.length; i++) {
+        if (fields[i] == 'circle') {
+            document.getElementById('circle-' + i).classList.remove('d-none')
+        }
+
+        if (fields[i] == 'cross') {
+            document.getElementById('cross-' + i).classList.remove('d-none')
+        }
+
+    }
 }
 
 function restart(){
